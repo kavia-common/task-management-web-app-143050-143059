@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Ocean Professional Theme core */
+  --ocean-primary: #2563EB;
+  --ocean-secondary: #F59E0B;
+  --ocean-error: #EF4444;
+  --ocean-bg: #f9fafb;
+  --ocean-surface: #ffffff;
+  --ocean-text: #111827;
+
+  /* Color tokens from design system */
+  --color-ffffff: #ffffff;
+  --color-000000: #000000;
+  --color-f5f8ff: #f5f8ff;
+  --color-ff6767: #ff6767;
+  --color-a1a3ab: #a1a3ab;
+  --color-3211ff: #3211ff;
+  --color-d3d3d3: #d3d3d3;
+  --color-f8f8f8: #f8f8f8;
+  --color-f8f8fb: #f8f8fb;
+  --color-3abeff: #3abeff;
+  --color-d9d9d9: #d9d9d9;
+  --color-747474: #747474;
+  --color-f24e1e: #f24e1e;
+  --color-f9f9f9: #f9f9f9;
+  --color-f21e1e: #f21e1e;
+  --color-0225ff: #0225ff;
+  --color-888888: #888888;
+  --color-05a301: #05a301;
+  --color-04c400: #04c400;
+  --color-42ade2: #42ade2;
+  --color-ffdd67: #ffdd67;
+  --color-eba352: #eba352;
+  --color-212427: #212427;
+  --color-565454: #565454;
+  --color-999999: #999999;
+  --color-ff9090: #ff9090;
+  --color-3d5a98: #3d5a98;
+  --color-ffc107: #ffc107;
+  --color-ff3d00: #ff3d00;
+  --color-4caf50: #4caf50;
+  --color-1976d2: #1976d2;
+  --color-9747ff: #9747ff;
+  --color-c4c4c4: #c4c4c4;
+
+  /* Typography tokens */
+  --font-family-inter: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-montserrat: Montserrat, "Montserrat Alternates", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  --typo-91-family: var(--font-family-montserrat);
+  --typo-91-size: 36px;
+  --typo-91-weight: 700;
+  --typo-91-line-height: 44px;
+  --typo-91-color: var(--color-212427);
+
+  --typo-92-family: var(--font-family-montserrat);
+  --typo-92-size: 16px;
+  --typo-92-weight: 500;
+  --typo-92-line-height: 20px;
+  --typo-92-color: var(--color-212427);
+
+  --typo-93-family: var(--font-family-montserrat);
+  --typo-93-size: 16px;
+  --typo-93-weight: 500;
+  --typo-93-line-height: 20px;
+  --typo-93-color: var(--color-999999);
+
+  --typo-94-family: var(--font-family-montserrat);
+  --typo-94-size: 16px;
+  --typo-94-weight: 500;
+  --typo-94-line-height: 20px;
+  --typo-94-color: #f8f9fb;
+
+  /* Layers */
+  --z-bg: 0;
+  --z-base: 1;
+  --z-above: 2;
+
+  /* Radii & shadows */
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-5: 5px;
+
+  --shadow-39: 5px 4px 14px rgba(0,0,0,0.10);
+  --shadow-40: 20px 16px 26px rgba(0,0,0,0.08);
+  --shadow-41: 45px 36px 34px rgba(0,0,0,0.06);
+  --shadow-42: 80px 64px 41px rgba(0,0,0,0.04);
+  --shadow-43: 124px 100px 45px rgba(0,0,0,0.02);
+
+  /* Inputs */
+  --input-height: 56px;
+  --input-radius: var(--radius-8);
+  --input-border: 1px solid var(--color-565454);
+
+  /* Transitions */
+  --focus-ring: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+/* Reset & base */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-family-inter);
+  background: var(--ocean-bg);
+  color: var(--ocean-text);
+}
+
+/* Typo helpers */
+.text-typo-91 {
+  font-family: var(--typo-91-family);
+  font-size: var(--typo-91-size);
+  font-weight: var(--typo-91-weight);
+  line-height: var(--typo-91-line-height);
+  color: var(--typo-91-color);
+}
+.text-typo-92 {
+  font-family: var(--typo-92-family);
+  font-size: var(--typo-92-size);
+  font-weight: var(--typo-92-weight);
+  line-height: var(--typo-92-line-height);
+  color: var(--typo-92-color);
+}
+.text-typo-93 {
+  font-family: var(--typo-93-family);
+  font-size: var(--typo-93-size);
+  font-weight: var(--typo-93-weight);
+  line-height: var(--typo-93-line-height);
+  color: var(--typo-93-color);
+}
+.text-typo-94 {
+  font-family: var(--typo-94-family);
+  font-size: var(--typo-94-size);
+  font-weight: var(--typo-94-weight);
+  line-height: var(--typo-94-line-height);
+  color: var(--typo-94-color);
+}
+
+/* Layout helpers */
+.screen-root {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.abs { position: absolute; }
+
+/* Buttons and common UI */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: var(--ocean-primary);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease, filter 120ms ease, background 120ms ease;
+}
+.btn:hover { filter: brightness(0.98); }
+.btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+.btn.pressed { transform: translateY(1px); }
+.btn.secondary { background: var(--ocean-secondary); color: #111; }
+.btn.ghost { background: transparent; color: var(--ocean-primary); border-color: rgba(37,99,235,0.35); }
+.btn.warn { background: var(--ocean-error); }
+
+.chip {
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+}
+.chip.active { background: rgba(37,99,235,0.1); border-color: rgba(37,99,235,0.25); color: var(--ocean-primary); }
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--ocean-text);
+}
+.checkbox__box {
+  width: 18px; height: 18px;
+  border: 1px solid var(--color-565454);
+  border-radius: 3px;
+  background: #fff;
+}
+.checkbox.checked .checkbox__box {
+  background: var(--color-ff9090);
+  border-color: var(--color-ff9090);
+}
+.checkbox__label {
+  font-family: var(--typo-92-family);
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Accessibility helper for programmatic actions */
+.sr-only-trigger {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0);
+  border: 0;
+}
