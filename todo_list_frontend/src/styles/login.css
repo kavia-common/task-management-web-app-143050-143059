@@ -5,6 +5,8 @@
   background-position: center;
   filter: saturate(1.05);
   z-index: var(--z-bg);
+  /* Prevent background layer from capturing mouse/touch events */
+  pointer-events: none;
 }
 
 .auth-screen {
@@ -27,6 +29,10 @@
   border-radius: 16px;
   box-shadow: var(--shadow-39), var(--shadow-40), var(--shadow-41);
   overflow: hidden;
+
+  /* Make sure the card is always above any backgrounds */
+  position: relative;
+  z-index: var(--z-above);
 }
 
 .auth-card__left {
