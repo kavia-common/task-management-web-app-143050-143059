@@ -127,14 +127,44 @@
   align-items: center;
   gap: 10px;
 }
-.auth-social .circle {
-  width: 28px; height: 28px; border-radius: 50%;
-  background: #111827;
-  display: inline-block;
+
+/* New accessible icon buttons */
+.auth-social__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #111827;
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+  transition: transform 120ms ease, background 120ms ease, box-shadow 120ms ease;
+  text-decoration: none;
 }
-.auth-social .circle.google { background: var(--color-3d5a98); }
-.auth-social .circle.facebook { background: var(--color-ffc107); }
-.auth-social .circle.other { background: #000; border-radius: 6px; width: 30px; height: 28px; }
+
+.auth-social__btn:hover {
+  background: rgba(37, 99, 235, 0.06); /* subtle ocean hover */
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.auth-social__btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring, 0 0 0 3px rgba(37, 99, 235, 0.25));
+}
+
+/* Icon sizing */
+.auth-social__icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Brand accents */
+.auth-social__btn.facebook { color: #1877F2; }
+.auth-social__btn.x { color: #111827; } /* neutral for X */
 
 .auth-footnote {
   margin-top: 8px;
